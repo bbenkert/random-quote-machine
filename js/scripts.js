@@ -1,6 +1,6 @@
 //randomly display a quote
 function pullRandomQuote(){  
-  var num =  Math.floor(Math.random() * (9 - 1)) + 1;
+  var num =  Math.floor(Math.random() * 9);
   switch(num) {
     case 1:
       quote = "Eat my shorts";
