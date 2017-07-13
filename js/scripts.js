@@ -1,42 +1,41 @@
 //randomly display a quote
+var quotes = [
+  {
+    quote: "Eat my shorts",
+    author: "Bart Simpson"
+  },
+    {
+    quote: "I know kung fu",
+    author: "Neo"
+    },
+  {
+    quote: "There is no spoon",
+    author: "Neo"
+    },
+  {
+    quote: "Become master of Javascript you want, a very long time you must code",
+    author: "Yoda"
+    },
+  {
+    quote: "If you build it they will click on it",
+    author: "Ben"
+    },
+  {
+    quote: "There can be only one",
+    author: "Highlander"
+    },
+  {
+    quote: "A fact about lazy people: 24543345553455355345 You were too lazy to read that number",
+    author: "Unknown"
+    },
+  {
+    quote: "I have the power!!",
+    author: "He-man"
+    }
+];
+  
 function pullRandomQuote(){  
   var num =  Math.floor(Math.random() * 9);
-  switch(num) {
-    case 1:
-      quote = "Eat my shorts";
-      author = "Bart Simpson"
-         break;
-         case 2:
-         quote = "I know kung fu";
-         author = "Neo"
-         break;
-         case 3:
-         quote = "There is no spoon";
-         author = "Neo"
-         break;
-         case 4:
-         quote = "Become master of Javascript you want, a very long time you must code";
-         author = "Yoda"
-         break;
-         case 5:
-         quote = "If you build it they will click on it";
-         author = "Ben"
-         break;
-         case 6:
-         quote = "There can be only one";
-         author = "Highlander"
-         break;
-         case 7:
-         quote = "A fact about lazy people: 24543345553455355345 You were too lazy to read that number";
-         author = "Unknown"
-         break;
-      case 8:
-         quote = "I have the power!!";
-         author = "He-man"
-         break;
-      
-  } 
-
 quoteAndAuthor = "<h3>" + quote + "</h3>-" + author
 document.getElementById("randomQuote").innerHTML = quoteAndAuthor;
   
