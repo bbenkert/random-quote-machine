@@ -33,9 +33,11 @@ var quotes = [
     author: "He-man"
     }
 ];
-
+var currentQuote;
 function pullRandomQuote(){  
-  var num =  Math.floor(Math.random() * quotes.length);
+ do{  var num =  Math.floor(Math.random() * quotes.length);
+  } while (currentQuote === num);
+currentQuote = num;
 quoteAndAuthor = "<h3>" + quotes[num].quote + "</h3>-" + quotes[num].author;
 document.getElementById("randomQuote").innerHTML = quoteAndAuthor;
  }
