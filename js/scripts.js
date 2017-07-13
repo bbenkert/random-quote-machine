@@ -43,9 +43,12 @@ document.getElementById("randomQuote").innerHTML = quoteAndAuthor;
  }
 
 //change background color when click me is clicked
+var currentColor;
 var backgroundColor = ["#f44336","#e91e63","#9c27b0","#673ab7","#3f51b5","#2196f3","#03a9f4","#00bcd4","#4caf50","#8bc34a","#ff9800"];
 function changeBgColor() {
-   var num =  Math.floor(Math.random() * backgroundColor.length);
+   do{ var num =  Math.floor(Math.random() * backgroundColor.length);
+   } while (currentColor === num);
+   currentColor = num;
   document.body.style.background = backgroundColor[num];
 }
 //change quote in tweet link
