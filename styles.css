@@ -1,0 +1,21 @@
+.quote {
+  font-weight:400;
+  font-size:30px;
+
+}
+.container {
+  margin-top:30px;
+  
+}
+.header {
+  padding:2px 0px 2px 0px;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+}
+h1 {
+  color:#fff;
+}
+.card-panel {
+  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 3em;
+}
