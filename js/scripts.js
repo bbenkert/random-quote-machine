@@ -53,5 +53,5 @@ function changeBgColor() {
 }
 //change quote in tweet link
 function tweetIt(){
-  document.getElementById("tweetIt").innerHTML = '<a href="https://twitter.com/intent/tweet?text='+quote+'&tw_p=tweetbutton&url=https%3A%2F%2Fcodepen.io%2Fbbenkert%2Fpen%2FWOaqRR"><button class="fa fa-twitter btn blue lighten-1"> Tweet</button>';
+  document.getElementById("tweetIt").innerHTML = '<a href="https://twitter.com/intent/tweet?text='+quotes[num].quote+'&tw_p=tweetbutton&url=https%3A%2F%2Fcodepen.io%2Fbbenkert%2Fpen%2FWOaqRR"><button class="fa fa-twitter btn blue lighten-1"> Tweet</button>';
 }
