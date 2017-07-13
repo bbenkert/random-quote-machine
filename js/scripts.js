@@ -33,12 +33,11 @@ var quotes = [
     author: "He-man"
     }
 ];
-  
+
 function pullRandomQuote(){  
-  var num =  Math.floor(Math.random() * 9);
-quoteAndAuthor = "<h3>" + quote + "</h3>-" + author
+  var num =  Math.floor(Math.random() * quotes.length);
+quoteAndAuthor = "<h3>" + quotes[num].quote + "</h3>-" + quotes[num].author;
 document.getElementById("randomQuote").innerHTML = quoteAndAuthor;
-  
  }
 
 //change background color when click me is clicked
