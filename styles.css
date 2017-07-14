@@ -9,6 +9,7 @@
 }
 .header {
   padding:2px 0px 2px 0px;
+  margin-bottom:-8px;
   border-top-left-radius: 3em;
   border-top-right-radius: 3em;
 }
