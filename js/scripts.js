@@ -43,8 +43,6 @@ Quote = quotes[num].quote;
 quoteAndAuthor = "<h3>" + Quote + "</h3>-" + quotes[num].author;
 document.getElementById("randomQuote").innerHTML = quoteAndAuthor;
 tweetQuote = quotes[num].quote;
-console.log(Quote);
-
  }
 
 //change background color when click me is clicked
