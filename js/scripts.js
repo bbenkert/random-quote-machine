@@ -41,8 +41,7 @@ function pullRandomQuote(){
 currentQuote = num;
 Quote = quotes[num].quote;
 quoteAndAuthor = "<h3>" + Quote + "</h3>-" + quotes[num].author;
-document.getElementById("randomQuote").innerHTML = quoteAndAuthor;
-tweetQuote = quotes[num].quote;
+$("#randomQuote").html(quoteAndAuthor);
  }
 
 //change background color when click me is clicked
@@ -52,9 +51,9 @@ function changeBgColor() {
    do{ var num =  Math.floor(Math.random() * backgroundColor.length);
    } while (currentColor === num);
    currentColor = num;
-  document.body.style.background = backgroundColor[num];
+$("body").css("background-color", backgroundColor[num]);
 }
 //change quote in tweet link
 function tweetIt(){
-  document.getElementById("tweetIt").innerHTML = '<a href="https://twitter.com/intent/tweet?text=' + Quote + '&tw_p=tweetbutton&url=https%3A%2F%2Fcodepen.io%2Fbbenkert%2Fpen%2FWOaqRR"><button class="fa fa-twitter btn blue lighten-1"> Tweet</button>';
+  $("#tweetIt").html('<a href="https://twitter.com/intent/tweet?text=' + Quote + '&tw_p=tweetbutton&url=https%3A%2F%2Fcodepen.io%2Fbbenkert%2Fpen%2FWOaqRR"><button class="fa fa-twitter btn blue lighten-1"> Tweet</button>');
 }
